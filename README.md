@@ -8,14 +8,13 @@
 -> Secure endpoints using JWT authentication
 
 **Features**
-Authentication (Register/Login using JWT)
-
-Google Gemini text generation
-DOCX export using python-docx
-PPTX export using python-pptx
-Fully working frontend (HTML + CSS + JS)
-Secured backend with FastAPI
-MySQL database support
+Authentication (Register/Login using JWT),
+Google Gemini text generation,
+DOCX export using python-docx,
+PPTX export using python-pptx,
+Fully working frontend (HTML + CSS + JS),
+Secured backend with FastAPI,
+MySQL database support,
 Environment variables support (.env)
 
 **Backend Setup Instructions (FastAPI)**
