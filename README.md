@@ -1,13 +1,13 @@
-AI Document Generator (DOCX + PPTX) – FastAPI + Gemini + HTML/JS Frontend
+**AI Document Generator (DOCX + PPTX) – FastAPI + Gemini + HTML/JS Frontend**
 
-A full-stack web application that allows users to:
-✅ Register & Login
-✅ Generate AI-powered content using Google Gemini
-✅ Export content as DOCX or PPTX
-✅ Download generated files
-✅ Secure endpoints using JWT authentication
+**A full-stack web application that allows users to:**
+-> Register & Login
+-> Generate AI-powered content using Google Gemini
+-> Export content as DOCX or PPTX
+->Download generated files
+-> Secure endpoints using JWT authentication
 
-🚀 Features
+**Features**
 Authentication (Register/Login using JWT)
 Google Gemini text generation
 DOCX export using python-docx
@@ -17,67 +17,35 @@ Secured backend with FastAPI
 MySQL database support
 Environment variables support (.env)
 
-📌 Project Structure
-AI_DOC_GENERATOR/
-│
-├── backend/
-│   ├── app/
-│   │   ├── auth/
-│   │   ├── content/
-│   │   ├── documents/
-│   │   ├── services/
-│   │   ├── utils/
-│   │   ├── config.py
-│   │   ├── database.py
-│   │   ├── deps.py
-│   │   ├── main.py
-│   │   ├── models.py
-│   │   ├── schemas.py
-│
-├── frontend/
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   ├── style.css
-│   ├── script.js
-│
-└── README.md
-└── .gitignore
-
-🔧 Backend Setup Instructions (FastAPI)
-1️⃣ Create a virtual environment
+**Backend Setup Instructions (FastAPI)**
+1️. Create a virtual environment
 python -m venv venv
 
-2️⃣ Activate environment
+2️. Activate environment
 Windows:
 venv\Scripts\activate
 Mac/Linux:
 source venv/bin/activate
 
-3️⃣ Install dependencies
+3️. Install dependencies
 pip install -r requirements.txt
 
-🔐 Environment Variables (.env)
-⚠️ This file must NOT be committed to GitHub.
-(Already handled in .gitignore)
-
+**Environment Variables (.env)**
+ This file must NOT be committed to GitHub.
 Create backend/.env:
 
 DB_USER=root
 DB_PASSWORD=yourpassword
-DB_HOST=127.0.0.1
+DB_HOST=localhost
 DB_PORT=3306
 DB_NAME=ai_doc_generator
-
 JWT_SECRET=your_jwt_secret_key
 JWT_ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=60
-
 GOOGLE_API_KEY=your_google_ai_studio_api_key
 GEMINI_MODEL=models/gemini-2.5-flash
 
-▶️ Run the Backend
-
+Run the Backend
 Inside backend/:
 uvicorn app.main:app --reload
 
@@ -87,7 +55,7 @@ http://127.0.0.1:8000
 Swagger Docs:
 http://127.0.0.1:8000/docs
 
-🌐 Frontend Setup (HTML + JS)
+**Frontend Setup (HTML + JS)**
 No installation needed.
 Run using VS Code Live Server or open directly:
 
@@ -98,49 +66,27 @@ frontend/register.html
 If using Live Server:
 http://127.0.0.1:5500/frontend/login.html
 
-🧪 Usage Guide
-1️⃣ Register
+**Usage Guide**
+1️. Register
 Go to register.html
 Create username & password
 Automatically saved in MySQL
 
-2️⃣ Login
+2️. Login
 Returns JWT token
 Stored in localStorage
 
-3️⃣ Generate Document
+3️. Generate Document
 Enter a prompt
 Choose DOCX or PPTX
 AI generates content → exported → file downloaded
 
-📝 API Endpoints
-Authentication:
-POST /auth/register
-POST /auth/login
-
-Generate Document:
-POST /documents/generate
-Authorization: Bearer <token>
-
-📦 Example Prompts
+**Example Prompts**
 “Explain AI in education in slide format”
-“Write a research-style summary about Machine Learning”
-“Give bullet points for a business pitch deck”
+“Generate a formal, well-structured PPT outline on the topic Artificial Intelligence in Healthcare. Create 6–8 slides, each with a clear title and 3–5 concise bullet points. Focus on definition, applications, benefits, challenges, and future scope.”
 
-🚀 Deployment Options
-
-⭐ Deploy Backend
-Render.com
-Railway.app
-AWS EC2
-
-⭐ Deploy Frontend
-GitHub Pages
-Netlify
-Vercel
-
-❤️ Contributions
+**Contributions**
 Pull requests are welcome!
 
-📧 Contact
+**Contact**
 For questions or support, feel free to ask on GitHub or directly.
