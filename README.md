@@ -9,6 +9,7 @@
 
 **Features**
 Authentication (Register/Login using JWT)
+
 Google Gemini text generation
 DOCX export using python-docx
 PPTX export using python-pptx
