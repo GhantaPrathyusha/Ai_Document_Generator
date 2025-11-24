@@ -1,14 +1,18 @@
 **AI Document Generator (DOCX + PPTX) – FastAPI + Gemini + HTML/JS Frontend**
 
 **Project Structure**
+
 <img width="338" height="831" alt="image" src="https://github.com/user-attachments/assets/2141425c-dbd2-4de6-bbaf-4c2b8b7e7447" />
 
+
 **Web Screenshots** 
+
 <img width="1431" height="652" alt="image" src="https://github.com/user-attachments/assets/bb45ef4d-e773-4d2c-ac33-4041f51fd284" />
 <img width="898" height="549" alt="image" src="https://github.com/user-attachments/assets/7dd30764-8ebe-48bf-b62b-fdc8f8aff7ab" />
 
 
 **A full-stack web application that allows users to:**
+
   -> Register & Login
   -> Generate AI-powered content using Google Gemini
   -> Export content as DOCX or PPTX
@@ -16,6 +20,7 @@
   -> Secure endpoints using JWT authentication
 
 **Features**
+
    Authentication (Register/Login using JWT),
    Google Gemini text generation,
    DOCX export using python-docx,
@@ -26,6 +31,7 @@
    Environment variables support (.env)
 
 **Backend Setup Instructions (FastAPI)**
+
 1️. Create and activate virtual environment
    python -m venv venv
    Windows:
@@ -45,7 +51,9 @@
    CREATE DATABASE ai_doc_generator;
 
 **Create Environment Variables (.env)**
+
  This file must NOT be committed to GitHub.
+ 
    Create backend/.env:
    
    DB_USER=root
@@ -70,6 +78,7 @@
     http://127.0.0.1:8000/docs
 
 **Frontend Setup (HTML + JS)**
+
   No installation needed.
   Run using VS Code Live Server or open directly:
   
@@ -81,6 +90,7 @@
     http://127.0.0.1:5500/frontend/login.html
 
 **Usage Guide**
+
   1️. Register
     Go to register.html
     Create username & password
@@ -96,11 +106,15 @@
     AI generates content → exported → file downloaded
 
 **Example Prompts**
+
   “Explain AI in education in slide format”
+  
   “Generate a formal, well-structured PPT outline on the topic Artificial Intelligence in Healthcare. Create 6–8 slides, each with a clear title and 3–5 concise bullet points. Focus on definition, applications, benefits, challenges, and future scope.”
 
 **Contributions**
+
   Pull requests are welcome!
 
 **Contact**
+
   For questions or support, feel free to ask on GitHub or directly.
