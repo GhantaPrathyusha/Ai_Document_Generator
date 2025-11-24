@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <h2>Create Account</h2>
+
+    <!-- Only ask for username + password because backend requires only these -->
+    <input type="text" id="username" placeholder="Enter Username" autocomplete="off">
+    <input type="password" id="password" placeholder="Enter Password" autocomplete="new-password">
+
+    <button onclick="register()">Register</button>
+
+    <a class="link" href="login.html">Already have an account? Login</a>
+</div>
+
+<script>
+async function register() {
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    const res = await fetch("http://127.0.0.1:8000/auth/register", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            username: username,
+            password: password
+        }),
+    });
+
+    const response = await res.json();
+
+    if (res.ok) {
+        alert("Registration successful!");
+        window.location.href = "login.html";
+    } else {
+        alert(response.detail || "Registration failed");
+    }
+}
+</script>
+
+</body>
+</html>

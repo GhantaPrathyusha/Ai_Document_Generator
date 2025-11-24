@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Document Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>AI Document Generator</h2>
+
+    <textarea id="prompt" rows="5" placeholder="Enter your prompt..."></textarea>
+
+    <select id="format">
+        <option value="docx">DOCX</option>
+        <option value="pptx">PPTX</option>
+    </select>
+
+    <button onclick="generateDoc()">Generate Document</button>
+
+    <a class="link" href="login.html" onclick="logout()">Logout</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

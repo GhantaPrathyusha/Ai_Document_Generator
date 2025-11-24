@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+SQLAlchemy
+mysql-connector-python
+alembic
+passlib[bcrypt]
+python-jose[cryptography]
+pydantic
+requests
+python-docx
+python-pptx
+google-generativeai
